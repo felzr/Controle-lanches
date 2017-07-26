@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textViewNomeProduto"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Quantidade em Estoque:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNomeProduto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView32"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_delete"
+        android:layout_below="@+id/textView32"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btdelProduto" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        android:layout_alignBottom="@+id/btdelProduto"
+        android:layout_toRightOf="@+id/btdelProduto"
+        android:layout_toEndOf="@+id/btdelProduto"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:id="@+id/btUpdateProduto"
+        android:tint="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:id="@+id/textViewQta"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:layout_below="@+id/textViewNomeProduto"
+        android:layout_toRightOf="@+id/textView32"
+        android:layout_toEndOf="@+id/textView32" />
+
+</RelativeLayout>

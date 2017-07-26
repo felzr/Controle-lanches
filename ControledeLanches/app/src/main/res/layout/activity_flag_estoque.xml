@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="Atualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="245dp"
+        android:id="@+id/buttonQtdUpdt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginBottom="43dp"
+        android:id="@+id/editTextQtdEstoque"
+        android:layout_alignBottom="@+id/buttonQtdUpdt"
+        android:layout_centerHorizontal="true"
+        android:hint="Quantidade" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="61dp"
+        android:id="@+id/textViewQtdId"
+        android:layout_above="@+id/editTextQtdEstoque"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Produto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextQtdEstoque"
+        android:layout_toLeftOf="@+id/buttonQtdUpdt"
+        android:layout_toStartOf="@+id/buttonQtdUpdt"
+        android:layout_marginBottom="14dp"
+        android:id="@+id/textViewQdtProduto"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:text="Produto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView35"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_alignBaseline="@+id/textViewQdtProduto"
+        android:layout_alignBottom="@+id/textViewQdtProduto"
+        android:layout_alignRight="@+id/textViewQtdId"
+        android:layout_alignEnd="@+id/textViewQtdId" />
+
+</RelativeLayout>

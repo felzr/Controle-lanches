@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="N:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewID"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+
+        android:layout_alignBaseline="@+id/textViewNome"
+        android:layout_alignBottom="@+id/textViewNome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <TextView
+        android:text="Bebida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewBebida"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignBaseline="@+id/textViewLanche"
+        android:layout_alignBottom="@+id/textViewLanche"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Lanche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewLanche"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+
+
+        android:layout_marginRight="51dp"
+        android:layout_marginEnd="51dp"
+        android:layout_alignBaseline="@+id/textViewNome"
+        android:layout_alignBottom="@+id/textViewNome"
+        android:layout_toLeftOf="@+id/textViewBebida"
+        android:layout_toStartOf="@+id/textViewBebida" />
+
+    <TextView
+        android:text="Nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewNome"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewID"
+        android:layout_toEndOf="@+id/textViewID" />
+
+</RelativeLayout>
